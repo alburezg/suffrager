@@ -1,0 +1,103 @@
+---
+output: github_document
+---
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-",
+  echo = TRUE, fig.height = 1, fig.width = 6
+)
+```
+
+
+# 'Sufrage': a colour palette for data visualisation in R
+
+Beta version - please do not share.
+
+Contact: Diego Alburez (<alburezg@lse.ac.uk>)
+
+## Installation
+
+```{r}
+# library(devtools)
+# install_github("alburezg/suffrage")
+```
+
+## Usage
+
+```{r}
+library(suffrage)
+```
+
+See all available palettes:
+
+```{r}
+names(suf_palettes)
+```
+
+## Palettes
+
+### Never a Step Backward: Oxon Berks Bucks Federation
+
+![](oxon.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("oxon")
+```
+
+### London Society (from Mary Lowndes Album)
+
+![](london.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("london")
+```
+
+### Hanwell Women's Institute
+
+![](hanwell.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("hanwell")
+```
+
+### Classic suffragette flag
+
+![](flag.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("flag")
+```
+
+```{r}
+# Continuous
+suf_palette("flag", n = 6, type = "continuous")
+```
+
+## Examples
+
+```{r fig.width=7, fig.height=6}
+library(ggplot2)
+data(diamonds)
+
+pal <- suf_palette("oxon")
+
+ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
+  geom_point() +
+  scale_colour_manual(values = pal)
+
+```
