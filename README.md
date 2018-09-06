@@ -22,6 +22,7 @@ See all available palettes:
 ``` r
 names(suf_palettes)
 #> [1] "flag"       "london"     "hanwell"    "oxon"       "manchester"
+#> [6] "mary"
 ```
 
 Palettes
@@ -86,6 +87,28 @@ suf_palette("hanwell")
 
 ![](fig/README-unnamed-chunk-9-1.png)
 
+### A. Montgomerie B. Eddoe Mary
+
+<img src="sources/mary.jpg" width="300" />
+
+``` r
+# Discrete
+suf_palette("mary")
+```
+
+![](fig/README-unnamed-chunk-10-1.png)
+
+### Manchester & District Federation
+
+<img src="sources/manchester.jpg" width="300" />
+
+``` r
+# Discrete
+suf_palette("manchester")
+```
+
+![](fig/README-unnamed-chunk-11-1.png)
+
 ### Classic suffragette flag
 
 <img src="sources/flag.jpg" width="300" />
@@ -95,14 +118,14 @@ suf_palette("hanwell")
 suf_palette("flag")
 ```
 
-![](fig/README-unnamed-chunk-10-1.png)
+![](fig/README-unnamed-chunk-12-1.png)
 
 ``` r
 # Continuous
 suf_palette("flag", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-11-1.png)
+![](fig/README-unnamed-chunk-13-1.png)
 
 Acknowledgements
 ----------------
