@@ -12,11 +12,9 @@ knitr::opts_chunk$set(
 ```
 
 
-# 'Sufrage': a colour palette for data visualisation in R
+# 'Suffrage': a colour palette for data visualisation in R
 
-Beta version - please do not share.
-
-Contact: Diego Alburez (<alburezg@lse.ac.uk>)
+Beta version.
 
 ## Installation
 
