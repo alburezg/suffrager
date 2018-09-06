@@ -1,10 +1,6 @@
 
-'Sufrage': a colour palette for data visualisation in R
-=======================================================
-
-Beta version - please do not share.
-
-Contact: Diego Alburez (<alburezg@lse.ac.uk>)
+'Suffrage': a colour palette for data visualisation in R (beta)
+===============================================================
 
 Installation
 ------------
