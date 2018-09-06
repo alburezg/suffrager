@@ -1,6 +1,6 @@
-#' @title wesanderson
-#' @name wesanderson
+#' @title suffrage
+#' @name suffrage
 #' @docType package
-#' @details list of palettes from Wes Anderson movies
-#' @description list of palettes from Wes Anderson movies
+#' @details list of palettes from suffragette and suffragist materials
+#' @description list of palettes from suffragette and suffragist materials
 NULL
