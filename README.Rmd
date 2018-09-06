@@ -37,7 +37,7 @@ names(suf_palettes)
 
 ### Never a Step Backward: Oxon Berks Bucks Federation
 
-![](oxon.jpg){width=300px}
+![](sources/oxon.jpg){width=300px}
 
 ```{r}
 # Discrete
@@ -46,7 +46,7 @@ suf_palette("oxon")
 
 ### London Society (from Mary Lowndes Album)
 
-![](london.jpg){width=300px}
+![](sources/london.jpg){width=300px}
 
 ```{r}
 # Discrete
@@ -55,7 +55,7 @@ suf_palette("london")
 
 ### Hanwell Women's Institute
 
-![](hanwell.jpg){width=300px}
+![](sources/hanwell.jpg){width=300px}
 
 ```{r}
 # Discrete
@@ -64,7 +64,7 @@ suf_palette("hanwell")
 
 ### Classic suffragette flag
 
-![](flag.jpg){width=300px}
+![](sources/flag.jpg){width=300px}
 
 ```{r}
 # Discrete
