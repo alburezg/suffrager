@@ -6,7 +6,7 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-",
+  fig.path = "fig/README-",
   echo = TRUE, fig.height = 1, fig.width = 6
 )
 ```
@@ -39,8 +39,6 @@ names(suf_palettes)
 
 ![](oxon.jpg){width=300px}
 
-&nbsp;
-
 ```{r}
 # Discrete
 suf_palette("oxon")
@@ -49,8 +47,6 @@ suf_palette("oxon")
 ### London Society (from Mary Lowndes Album)
 
 ![](london.jpg){width=300px}
-
-&nbsp;
 
 ```{r}
 # Discrete
@@ -61,8 +57,6 @@ suf_palette("london")
 
 ![](hanwell.jpg){width=300px}
 
-&nbsp;
-
 ```{r}
 # Discrete
 suf_palette("hanwell")
@@ -71,8 +65,6 @@ suf_palette("hanwell")
 ### Classic suffragette flag
 
 ![](flag.jpg){width=300px}
-
-&nbsp;
 
 ```{r}
 # Discrete
