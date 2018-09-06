@@ -85,6 +85,23 @@ ggplot(airquality, aes(x=Day, y=Month)) +
 suf_palette("hanwell")
 ```
 
+### A. Montgomerie B. Eddoe Mary
+
+![](sources/mary.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("mary")
+```
+
+### Manchester & District Federation
+
+![](sources/manchester.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("manchester")
+```
 
 ### Classic suffragette flag
 
