@@ -1,0 +1,72 @@
+---
+title: "Suffragette palette"
+author: "Beta"
+date: "21 August 2018"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.height = 1, fig.width = 6)
+```
+
+# Sufragette palettes
+
+## Usage
+
+```{r}
+library(suffragette)
+```
+
+See all palettes:
+
+```{r}
+names(suf_palettes)
+```
+
+## Palettes
+
+### London Society
+
+![](london.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("london")
+```
+
+```{r}
+# Continuous
+suf_palette("london", n = 10, type = "continuous")
+```
+
+### Hanwell W1
+
+![](hanwell.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("hanwell")
+```
+
+### Suffragette flag
+
+![](flag.jpg){width=300px}
+
+&nbsp;
+
+```{r}
+# Discrete
+suf_palette("flag")
+```
+
+```{r}
+# Continuous
+suf_palette("flag", n = 6, type = "continuous")
+```
