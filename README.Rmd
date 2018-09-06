@@ -35,6 +35,27 @@ names(suf_palettes)
 
 ## Palettes
 
+### London Society (from Mary Lowndes Album)
+
+![](sources/london_big.png){width=600px}
+
+```{r}
+# Discrete
+suf_palette("london")
+```
+
+### Example
+
+```{r fig.width=7, fig.height=3}
+library(ggplot2)
+data(airquality)
+
+ggplot(airquality, aes(x=Day, y=Month)) +
+  geom_tile(aes(fill=Temp)) +
+  scale_fill_gradientn(colours = suf_palette("london", 30, type = "continuous")) +
+  coord_equal()
+```
+
 ### Never a Step Backward: Oxon Berks Bucks Federation
 
 ![](sources/oxon.jpg){width=300px}
@@ -47,33 +68,12 @@ suf_palette("oxon")
 ### Example
 
 ```{r fig.width=7, fig.height=6}
-library(ggplot2)
 data(diamonds)
 
 ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
   geom_point() +
   scale_colour_manual(values = suf_palette("oxon"))
 
-```
-
-### London Society (from Mary Lowndes Album)
-
-![](sources/london.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("london")
-```
-
-### Example
-
-```{r fig.width=7, fig.height=3}
-data(airquality)
-
-ggplot(airquality, aes(x=Day, y=Month)) +
-  geom_tile(aes(fill=Temp)) +
-  scale_fill_gradientn(colours = suf_palette("london", 30, type = "continuous")) +
-  coord_equal()
 ```
 
 ### Hanwell Women's Institute

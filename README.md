@@ -28,6 +28,31 @@ names(suf_palettes)
 Palettes
 --------
 
+### London Society (from Mary Lowndes Album)
+
+<img src="sources/london_big.png" width="600" />
+
+``` r
+# Discrete
+suf_palette("london")
+```
+
+![](fig/README-unnamed-chunk-5-1.png)
+
+### Example
+
+``` r
+library(ggplot2)
+data(airquality)
+
+ggplot(airquality, aes(x=Day, y=Month)) +
+  geom_tile(aes(fill=Temp)) +
+  scale_fill_gradientn(colours = suf_palette("london", 30, type = "continuous")) +
+  coord_equal()
+```
+
+![](fig/README-unnamed-chunk-6-1.png)
+
 ### Never a Step Backward: Oxon Berks Bucks Federation
 
 <img src="sources/oxon.jpg" width="300" />
@@ -37,41 +62,16 @@ Palettes
 suf_palette("oxon")
 ```
 
-![](fig/README-unnamed-chunk-5-1.png)
-
-### Example
-
-``` r
-library(ggplot2)
-data(diamonds)
-
-ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
-  geom_point() +
-  scale_colour_manual(values = suf_palette("oxon"))
-```
-
-![](fig/README-unnamed-chunk-6-1.png)
-
-### London Society (from Mary Lowndes Album)
-
-<img src="sources/london.jpg" width="300" />
-
-``` r
-# Discrete
-suf_palette("london")
-```
-
 ![](fig/README-unnamed-chunk-7-1.png)
 
 ### Example
 
 ``` r
-data(airquality)
+data(diamonds)
 
-ggplot(airquality, aes(x=Day, y=Month)) +
-  geom_tile(aes(fill=Temp)) +
-  scale_fill_gradientn(colours = suf_palette("london", 30, type = "continuous")) +
-  coord_equal()
+ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
+  geom_point() +
+  scale_colour_manual(values = suf_palette("oxon"))
 ```
 
 ![](fig/README-unnamed-chunk-8-1.png)
