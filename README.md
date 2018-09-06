@@ -38,6 +38,19 @@ suf_palette("oxon")
 
 ![](fig/README-unnamed-chunk-5-1.png)
 
+### Example
+
+``` r
+library(ggplot2)
+data(diamonds)
+
+ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
+  geom_point() +
+  scale_colour_manual(values = suf_palette("oxon"))
+```
+
+![](fig/README-unnamed-chunk-6-1.png)
+
 ### London Society (from Mary Lowndes Album)
 
 <img src="sources/london.jpg" width="300" />
@@ -47,7 +60,20 @@ suf_palette("oxon")
 suf_palette("london")
 ```
 
-![](fig/README-unnamed-chunk-6-1.png)
+![](fig/README-unnamed-chunk-7-1.png)
+
+### Example
+
+``` r
+data(airquality)
+
+ggplot(airquality, aes(x=Day, y=Month)) +
+  geom_tile(aes(fill=Temp)) +
+  scale_fill_gradientn(colours = suf_palette("london", 30, type = "continuous")) +
+  coord_equal()
+```
+
+![](fig/README-unnamed-chunk-8-1.png)
 
 ### Hanwell Women's Institute
 
@@ -58,7 +84,7 @@ suf_palette("london")
 suf_palette("hanwell")
 ```
 
-![](fig/README-unnamed-chunk-7-1.png)
+![](fig/README-unnamed-chunk-9-1.png)
 
 ### Classic suffragette flag
 
@@ -69,27 +95,16 @@ suf_palette("hanwell")
 suf_palette("flag")
 ```
 
-![](fig/README-unnamed-chunk-8-1.png)
+![](fig/README-unnamed-chunk-10-1.png)
 
 ``` r
 # Continuous
 suf_palette("flag", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-9-1.png)
+![](fig/README-unnamed-chunk-11-1.png)
 
-Examples
---------
+Acknowledgements
+----------------
 
-``` r
-library(ggplot2)
-data(diamonds)
-
-pal <- suf_palette("oxon")
-
-ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
-  geom_point() +
-  scale_colour_manual(values = pal)
-```
-
-![](fig/README-unnamed-chunk-10-1.png)
+The package's architecture was taken from [Karthik Ram's wesanderson package](https://github.com/karthik/wesanderson).
