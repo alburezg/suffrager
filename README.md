@@ -21,8 +21,9 @@ See all available palettes:
 
 ``` r
 names(suf_palettes)
-#> [1] "flag"       "london"     "hanwell"    "oxon"       "manchester"
-#> [6] "mary"
+#>  [1] "flag"       "london"     "hanwell"    "oxon"       "manchester"
+#>  [6] "mary"       "marion"     "e17"        "equality"   "caroline"  
+#> [11] "CarolMan"   "chelsea"    "StGeorge"   "chelsea2"
 ```
 
 Palettes
@@ -53,7 +54,7 @@ ggplot(airquality, aes(x=Day, y=Month)) +
 
 ![](fig/README-unnamed-chunk-6-1.png)
 
-### Never a Step Backward: Oxon Berks Bucks Federation
+### Oxon Berks Bucks Federation: Never a Step Backward
 
 <img src="sources/oxon.jpg" width="300" />
 
@@ -76,6 +77,17 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 
 ![](fig/README-unnamed-chunk-8-1.png)
 
+### Caroline & Manchester
+
+<img src="sources/carol_man.png" width="600" />
+
+``` r
+# Discrete
+suf_palette("CarolMan")
+```
+
+![](fig/README-unnamed-chunk-9-1.png)
+
 ### Hanwell Women's Institute
 
 <img src="sources/hanwell.jpg" width="300" />
@@ -85,9 +97,31 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 suf_palette("hanwell")
 ```
 
-![](fig/README-unnamed-chunk-9-1.png)
+![](fig/README-unnamed-chunk-10-1.png)
 
-### A. Montgomerie B. Eddoe Mary
+### Equality
+
+<img src="sources/equality.png" width="600" />
+
+``` r
+# Discrete
+suf_palette("equality")
+```
+
+![](fig/README-unnamed-chunk-11-1.png)
+
+### Chelsea & St George
+
+<img src="sources/chelsea2.png" width="600" />
+
+``` r
+# Discrete
+suf_palette("chelsea2")
+```
+
+![](fig/README-unnamed-chunk-12-1.png)
+
+### Mary
 
 <img src="sources/mary.jpg" width="300" />
 
@@ -96,18 +130,7 @@ suf_palette("hanwell")
 suf_palette("mary")
 ```
 
-![](fig/README-unnamed-chunk-10-1.png)
-
-### Manchester & District Federation
-
-<img src="sources/manchester.jpg" width="300" />
-
-``` r
-# Discrete
-suf_palette("manchester")
-```
-
-![](fig/README-unnamed-chunk-11-1.png)
+![](fig/README-unnamed-chunk-13-1.png)
 
 ### Classic suffragette flag
 
@@ -118,14 +141,14 @@ suf_palette("manchester")
 suf_palette("flag")
 ```
 
-![](fig/README-unnamed-chunk-12-1.png)
+![](fig/README-unnamed-chunk-14-1.png)
 
 ``` r
 # Continuous
 suf_palette("flag", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-13-1.png)
+![](fig/README-unnamed-chunk-15-1.png)
 
 Acknowledgements
 ----------------

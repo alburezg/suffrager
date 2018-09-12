@@ -12,9 +12,18 @@ suf_palettes <- list(
   mary = c("#24392A", "#463360", "#882635", "#B98B3D", "#D98084", "#93A4B8"),
   marion = c("#4D7F4C", "#C7A539", "#2A1440", "#4C3CBA"),
   e17 = c("#85A6D5", "#483B7D", "#D7BB55", "#455F3F"),
+
+  equality = c("#455F3F", "#D7BB55", "#2A1440", "#483B7D", "#4C3CBA"),
+
   caroline = c("#D51719", "#C7921F", "#1F2706", "#1674A6"),
+
+  CarolMan = c("#7C4E1A", "#FF2C00", "#EDD422", "#3A8121", "#4391C2", "#032D67", "#090C2F"),
+
   chelsea = c("#454F63", "#998084", "#9B574E", "#DFA3A2", "#6A6A46"),
-  StGeorge = c("#EBDAC8", "#C0A26D", "#997948", "#65765C", "#476371")
+  StGeorge = c("#EBDAC8", "#C0A26D", "#997948", "#65765C", "#476371"),
+
+  chelsea2 = c("#454F63", "#998084", "#9B574E",  "#DFA3A2", "#997948", "#6A6A46")
+
 )
 
 #' A Wes Anderson palette generator

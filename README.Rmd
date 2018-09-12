@@ -56,7 +56,7 @@ ggplot(airquality, aes(x=Day, y=Month)) +
   coord_equal()
 ```
 
-### Never a Step Backward: Oxon Berks Bucks Federation
+### Oxon Berks Bucks Federation: Never a Step Backward
 
 ![](sources/oxon.jpg){width=300px}
 
@@ -76,6 +76,15 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 
 ```
 
+### Caroline & Manchester
+
+![](sources/carol_man.png){width=600px}
+
+```{r}
+# Discrete
+suf_palette("CarolMan")
+```
+
 ### Hanwell Women's Institute
 
 ![](sources/hanwell.jpg){width=300px}
@@ -85,67 +94,31 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 suf_palette("hanwell")
 ```
 
-### A. Montgomerie B. Eddoe Mary
+### Equality
+
+![](sources/equality.png){width=600px}
+
+```{r}
+# Discrete
+suf_palette("equality")
+```
+
+### Chelsea & St George
+
+![](sources/chelsea2.png){width=600px}
+
+```{r}
+# Discrete
+suf_palette("chelsea2")
+```
+
+### Mary
 
 ![](sources/mary.jpg){width=300px}
 
 ```{r}
 # Discrete
 suf_palette("mary")
-```
-
-### Manchester & District Federation
-
-![](sources/manchester.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("manchester")
-```
-
-### Marion
-
-![](sources/e17.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("marion")
-```
-
-### E17
-
-![](sources/e17.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("e17")
-```
-
-### Caroline
-
-![](sources/caroline.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("caroline")
-```
-
-### Chelsea
-
-![](sources/chelsea.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("chelsea")
-```
-
-### St George
-
-![](sources/StGeorge.jpg){width=300px}
-
-```{r}
-# Discrete
-suf_palette("StGeorge")
 ```
 
 ### Classic suffragette flag
