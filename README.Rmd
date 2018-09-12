@@ -103,6 +103,51 @@ suf_palette("mary")
 suf_palette("manchester")
 ```
 
+### Marion
+
+![](sources/e17.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("marion")
+```
+
+### E17
+
+![](sources/e17.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("e17")
+```
+
+### Caroline
+
+![](sources/caroline.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("caroline")
+```
+
+### Chelsea
+
+![](sources/chelsea.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("chelsea")
+```
+
+### St George
+
+![](sources/StGeorge.jpg){width=300px}
+
+```{r}
+# Discrete
+suf_palette("StGeorge")
+```
+
 ### Classic suffragette flag
 
 ![](sources/flag.jpg){width=300px}
