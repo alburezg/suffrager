@@ -91,6 +91,17 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 suf_palette("CarolMan")
 ```
 
+### Example
+
+```{r fig.width=7, fig.height=6}
+data("airquality")
+
+ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) + 
+  geom_violin() +
+  scale_fill_manual(values = suf_palette("CarolMan"))
+
+```
+
 ### 4. Hanwell Women's Institute
 
 ![](sources/pal4.jpg){width=600px}

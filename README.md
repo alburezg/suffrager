@@ -93,6 +93,19 @@ suf_palette("CarolMan")
 
 ![](fig/README-unnamed-chunk-9-1.png)
 
+### Example
+
+``` r
+data("airquality")
+
+ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) + 
+  geom_violin() +
+  scale_fill_manual(values = suf_palette("CarolMan"))
+#> Warning: Removed 37 rows containing non-finite values (stat_ydensity).
+```
+
+![](fig/README-unnamed-chunk-10-1.png)
+
 ### 4. Hanwell Women's Institute
 
 <img src="sources/pal4.jpg" width="600" />  
@@ -102,14 +115,14 @@ suf_palette("CarolMan")
 suf_palette("hanwell")
 ```
 
-![](fig/README-unnamed-chunk-10-1.png)
+![](fig/README-unnamed-chunk-11-1.png)
 
 ``` r
 # Discrete
 suf_palette("equality")
 ```
 
-![](fig/README-unnamed-chunk-11-1.png)
+![](fig/README-unnamed-chunk-12-1.png)
 
 ### Example
 
@@ -121,7 +134,7 @@ ggplot(diamonds, aes(x = carat, fill = cut)) +
     scale_fill_manual(values = suf_palette("oxon"))
 ```
 
-![](fig/README-unnamed-chunk-12-1.png)
+![](fig/README-unnamed-chunk-13-1.png)
 
 ### 5. Chelsea & St George
 
@@ -132,14 +145,14 @@ ggplot(diamonds, aes(x = carat, fill = cut)) +
 suf_palette("chelsea2")
 ```
 
-![](fig/README-unnamed-chunk-13-1.png)
+![](fig/README-unnamed-chunk-14-1.png)
 
 ``` r
 # Discrete
 suf_palette("mary")
 ```
 
-![](fig/README-unnamed-chunk-14-1.png)
+![](fig/README-unnamed-chunk-15-1.png)
 
 ### Example
 
@@ -151,7 +164,7 @@ ggplot(iris,aes(x = Petal.Length, fill = Species)) +
   scale_color_manual(values = suf_palette("chelsea2"))
 ```
 
-![](fig/README-unnamed-chunk-15-1.png)
+![](fig/README-unnamed-chunk-16-1.png)
 
 ### 6. Classic suffragette
 
@@ -162,14 +175,14 @@ ggplot(iris,aes(x = Petal.Length, fill = Species)) +
 suf_palette("flag")
 ```
 
-![](fig/README-unnamed-chunk-16-1.png)
+![](fig/README-unnamed-chunk-17-1.png)
 
 ``` r
 # Continuous
 suf_palette("flag", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-17-1.png)
+![](fig/README-unnamed-chunk-18-1.png)
 
 ### Example
 
@@ -183,7 +196,7 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
   scale_color_manual(values = suf_palette("flag", n = 3, type = "continuous"))
 ```
 
-![](fig/README-unnamed-chunk-18-1.png)
+![](fig/README-unnamed-chunk-19-1.png)
 
 Acknowledgements
 ----------------
