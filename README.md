@@ -29,7 +29,7 @@ names(suf_palettes)
 Palettes
 --------
 
-### London Society (from Mary Lowndes Album)
+### 1. London Society (from Mary Lowndes Album)
 
 <img src="sources/london_big.png" width="600" />
 
@@ -46,6 +46,7 @@ suf_palette("london")
 
 ``` r
 library(ggplot2)
+
 data(airquality)
 
 ggplot(airquality, aes(x=Day, y=Month)) +
@@ -56,7 +57,7 @@ ggplot(airquality, aes(x=Day, y=Month)) +
 
 ![](fig/README-unnamed-chunk-6-1.png)
 
-### Oxon Berks Bucks Federation: Never a Step Backward
+### 2. Oxon Berks Bucks Federation: Never a Step Backward
 
 <img src="sources/pal2.jpg" width="600" />  
 
@@ -79,7 +80,7 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 
 ![](fig/README-unnamed-chunk-8-1.png)
 
-### Caroline & Manchester
+### 3. Caroline & Manchester
 
 <img src="sources/carol_man.png" width="600" />
 
@@ -92,7 +93,7 @@ suf_palette("CarolMan")
 
 ![](fig/README-unnamed-chunk-9-1.png)
 
-### Hanwell Women's Institute
+### 4. Hanwell Women's Institute
 
 <img src="sources/pal4.jpg" width="600" />  
 
@@ -110,7 +111,19 @@ suf_palette("equality")
 
 ![](fig/README-unnamed-chunk-11-1.png)
 
-### Chelsea & St George
+### Example
+
+``` r
+data(diamonds)
+
+ggplot(diamonds, aes(x = carat, fill = cut)) + 
+  geom_histogram(bins = 20) +
+    scale_fill_manual(values = suf_palette("oxon"))
+```
+
+![](fig/README-unnamed-chunk-12-1.png)
+
+### 5. Chelsea & St George
 
 <img src="sources/chelsea2.png" width="600" />
 
@@ -119,14 +132,26 @@ suf_palette("equality")
 suf_palette("chelsea2")
 ```
 
-![](fig/README-unnamed-chunk-12-1.png)
+![](fig/README-unnamed-chunk-13-1.png)
 
 ``` r
 # Discrete
 suf_palette("mary")
 ```
 
-![](fig/README-unnamed-chunk-13-1.png)
+![](fig/README-unnamed-chunk-14-1.png)
+
+### Example
+
+``` r
+data(iris)
+
+ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
+  geom_density() +
+  scale_color_manual(values = suf_palette("chelsea2"))
+```
+
+![](fig/README-unnamed-chunk-15-1.png)
 
 ### 6. Classic suffragette
 
@@ -137,14 +162,28 @@ suf_palette("mary")
 suf_palette("flag")
 ```
 
-![](fig/README-unnamed-chunk-14-1.png)
+![](fig/README-unnamed-chunk-16-1.png)
 
 ``` r
 # Continuous
 suf_palette("flag", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-15-1.png)
+![](fig/README-unnamed-chunk-17-1.png)
+
+### Example
+
+``` r
+data(iris)
+
+ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) + 
+  geom_point() +
+  geom_smooth(method = 'loess') +
+  facet_grid(. ~ Species, scales = 'free') +
+  scale_color_manual(values = suf_palette("flag", n = 3, type = "continuous"))
+```
+
+![](fig/README-unnamed-chunk-18-1.png)
 
 Acknowledgements
 ----------------

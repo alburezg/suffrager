@@ -35,7 +35,7 @@ names(suf_palettes)
 
 ## Palettes
 
-### London Society (from Mary Lowndes Album)
+### 1. London Society (from Mary Lowndes Album)
 
 ![](sources/london_big.png){width=600px}
 
@@ -50,6 +50,7 @@ suf_palette("london")
 
 ```{r fig.width=7, fig.height=3}
 library(ggplot2)
+
 data(airquality)
 
 ggplot(airquality, aes(x=Day, y=Month)) +
@@ -58,7 +59,7 @@ ggplot(airquality, aes(x=Day, y=Month)) +
   coord_equal()
 ```
 
-### Oxon Berks Bucks Federation: Never a Step Backward
+### 2. Oxon Berks Bucks Federation: Never a Step Backward
 
 ![](sources/pal2.jpg){width=600px}
 &nbsp;
@@ -79,7 +80,7 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 
 ```
 
-### Caroline & Manchester
+### 3. Caroline & Manchester
 
 ![](sources/carol_man.png){width=600px}
 
@@ -90,7 +91,7 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 suf_palette("CarolMan")
 ```
 
-### Hanwell Women's Institute
+### 4. Hanwell Women's Institute
 
 ![](sources/pal4.jpg){width=600px}
 &nbsp;
@@ -105,7 +106,18 @@ suf_palette("hanwell")
 suf_palette("equality")
 ```
 
-### Chelsea & St George
+### Example
+
+```{r fig.width=7, fig.height=6}
+data(diamonds)
+
+ggplot(diamonds, aes(x = carat, fill = cut)) + 
+  geom_histogram(bins = 20) +
+    scale_fill_manual(values = suf_palette("oxon"))
+
+```
+
+### 5. Chelsea & St George
 
 ![](sources/chelsea2.png){width=600px}
 
@@ -117,6 +129,17 @@ suf_palette("chelsea2")
 ```{r}
 # Discrete
 suf_palette("mary")
+```
+
+### Example
+
+```{r fig.width=7, fig.height=6}
+data(iris)
+
+ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
+  geom_density() +
+  scale_color_manual(values = suf_palette("chelsea2"))
+
 ```
 
 ### 6. Classic suffragette
@@ -131,6 +154,19 @@ suf_palette("flag")
 ```{r}
 # Continuous
 suf_palette("flag", n = 6, type = "continuous")
+```
+
+### Example
+
+```{r fig.width=7, fig.height=6}
+data(iris)
+
+ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) + 
+  geom_point() +
+  geom_smooth(method = 'loess') +
+  facet_grid(. ~ Species, scales = 'free') +
+  scale_color_manual(values = suf_palette("flag", n = 3, type = "continuous"))
+
 ```
 
 
