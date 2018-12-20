@@ -58,7 +58,7 @@ ggplot(airquality, aes(x=Day, y=Month)) +
 
 ### Oxon Berks Bucks Federation: Never a Step Backward
 
-![](sources/oxon.jpg){width=300px}
+![](sources/pal2.jpg){width=300px}
 
 ```{r}
 # Discrete
@@ -87,16 +87,12 @@ suf_palette("CarolMan")
 
 ### Hanwell Women's Institute
 
-![](sources/hanwell.jpg){width=300px}
+![](sources/pal4.jpg){width=600px}
 
 ```{r}
 # Discrete
 suf_palette("hanwell")
 ```
-
-### Equality
-
-![](sources/equality.png){width=600px}
 
 ```{r}
 # Discrete
@@ -112,18 +108,14 @@ suf_palette("equality")
 suf_palette("chelsea2")
 ```
 
-### Mary
-
-![](sources/mary.jpg){width=300px}
-
 ```{r}
 # Discrete
 suf_palette("mary")
 ```
 
-### Classic suffragette flag
+### 6. Classic suffragette
 
-![](sources/flag.jpg){width=300px}
+![](sources/pal6.jpg){width=300px}
 
 ```{r}
 # Discrete
