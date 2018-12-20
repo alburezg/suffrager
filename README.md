@@ -33,6 +33,8 @@ Palettes
 
 <img src="sources/london_big.png" width="600" />
 
+ 
+
 ``` r
 # Discrete
 suf_palette("london")
@@ -56,7 +58,7 @@ ggplot(airquality, aes(x=Day, y=Month)) +
 
 ### Oxon Berks Bucks Federation: Never a Step Backward
 
-<img src="sources/pal2.jpg" width="300" />
+<img src="sources/pal2.jpg" width="600" />  
 
 ``` r
 # Discrete
@@ -81,6 +83,8 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 
 <img src="sources/carol_man.png" width="600" />
 
+ 
+
 ``` r
 # Discrete
 suf_palette("CarolMan")
@@ -90,7 +94,7 @@ suf_palette("CarolMan")
 
 ### Hanwell Women's Institute
 
-<img src="sources/pal4.jpg" width="600" />
+<img src="sources/pal4.jpg" width="600" />  
 
 ``` r
 # Discrete
@@ -126,7 +130,7 @@ suf_palette("mary")
 
 ### 6. Classic suffragette
 
-<img src="sources/pal6.jpg" width="300" />
+<img src="sources/pal6.jpg" width="600" />
 
 ``` r
 # Discrete
