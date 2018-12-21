@@ -9,7 +9,7 @@ suf_palettes <- list(
   , CarolMan = c("#7C4E1A", "#FF2C00", "#EDD422", "#3A8121", "#4391C2", "#032D67", "#090C2F") #update
   , hanwell = c("#200E6A", "#B01824", "#90468C",  "#326529",  "#D7BB55", "#82D0F0")
   , chelsea = c("#454F63", "#998084", "#9B574E", "#DFA3A2", "#997948", "#6A6A46") #update
-  , classic = c("#7F4264", "#00BA5D")
+  , classic = c("#990099", "#009900")
 
   # Old palettes
   # , oxon = c("#C10528", "#E46E30", "#BC8B49", "#A2D2D4", "#0D4278", "#4D3161")
