@@ -31,7 +31,7 @@ Palettes
 
 ### 1. London Society (from Mary Lowndes Album)
 
-<img src="sources/london_big.png" width="600" />
+<img src="sources/pal1.jpg" width="600" />
 
  
 
@@ -82,7 +82,7 @@ ggplot(diamonds, aes(x=carat, y=price, colour=cut)) +
 
 ### 3. Caroline & Manchester
 
-<img src="sources/carol_man.png" width="600" />
+<img src="sources/pal3.jpg" width="600" />
 
  
 
@@ -138,7 +138,7 @@ ggplot(diamonds, aes(x = carat, fill = cut)) +
 
 ### 5. Chelsea & St George
 
-<img src="sources/chelsea2.png" width="600" />
+<img src="sources/pal5.jpg" width="600" />
 
 ``` r
 # Discrete
