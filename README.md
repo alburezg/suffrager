@@ -21,9 +21,8 @@ See all available palettes:
 
 ``` r
 names(suf_palettes)
-#>  [1] "flag"       "london"     "hanwell"    "oxon"       "manchester"
-#>  [6] "mary"       "marion"     "e17"        "equality"   "caroline"  
-#> [11] "CarolMan"   "chelsea"    "StGeorge"   "chelsea2"
+#> [1] "london"   "oxon"     "CarolMan" "hanwell"  "chelsea"  "classic" 
+#> [7] "mary"
 ```
 
 Palettes
@@ -117,13 +116,6 @@ suf_palette("hanwell")
 
 ![](fig/README-unnamed-chunk-11-1.png)
 
-``` r
-# Discrete
-suf_palette("equality")
-```
-
-![](fig/README-unnamed-chunk-12-1.png)
-
 ### Example
 
 ``` r
@@ -131,10 +123,10 @@ data(diamonds)
 
 ggplot(diamonds, aes(x = carat, fill = cut)) + 
   geom_histogram(bins = 20) +
-    scale_fill_manual(values = suf_palette("oxon"))
+    scale_fill_manual(values = suf_palette("hanwell"))
 ```
 
-![](fig/README-unnamed-chunk-13-1.png)
+![](fig/README-unnamed-chunk-12-1.png)
 
 ### 5. Chelsea & St George
 
@@ -142,17 +134,17 @@ ggplot(diamonds, aes(x = carat, fill = cut)) +
 
 ``` r
 # Discrete
-suf_palette("chelsea2")
+suf_palette("chelsea")
 ```
 
-![](fig/README-unnamed-chunk-14-1.png)
+![](fig/README-unnamed-chunk-13-1.png)
 
 ``` r
 # Discrete
 suf_palette("mary")
 ```
 
-![](fig/README-unnamed-chunk-15-1.png)
+![](fig/README-unnamed-chunk-14-1.png)
 
 ### Example
 
@@ -161,10 +153,10 @@ data(iris)
 
 ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
   geom_density() +
-  scale_color_manual(values = suf_palette("chelsea2"))
+  scale_color_manual(values = suf_palette("chelsea"))
 ```
 
-![](fig/README-unnamed-chunk-16-1.png)
+![](fig/README-unnamed-chunk-15-1.png)
 
 ### 6. Classic suffragette
 
@@ -172,17 +164,17 @@ ggplot(iris,aes(x = Petal.Length, fill = Species)) +
 
 ``` r
 # Discrete
-suf_palette("flag")
+suf_palette("classic")
 ```
 
-![](fig/README-unnamed-chunk-17-1.png)
+![](fig/README-unnamed-chunk-16-1.png)
 
 ``` r
 # Continuous
-suf_palette("flag", n = 6, type = "continuous")
+suf_palette("classic", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-18-1.png)
+![](fig/README-unnamed-chunk-17-1.png)
 
 ### Example
 
@@ -193,10 +185,10 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
   geom_point() +
   geom_smooth(method = 'loess') +
   facet_grid(. ~ Species, scales = 'free') +
-  scale_color_manual(values = suf_palette("flag", n = 3, type = "continuous"))
+  scale_color_manual(values = suf_palette("classic", n = 3, type = "continuous"))
 ```
 
-![](fig/README-unnamed-chunk-19-1.png)
+![](fig/README-unnamed-chunk-18-1.png)
 
 Acknowledgements
 ----------------

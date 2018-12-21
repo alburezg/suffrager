@@ -112,11 +112,6 @@ ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) +
 suf_palette("hanwell")
 ```
 
-```{r}
-# Discrete
-suf_palette("equality")
-```
-
 ### Example
 
 ```{r fig.width=7, fig.height=6}
@@ -124,7 +119,7 @@ data(diamonds)
 
 ggplot(diamonds, aes(x = carat, fill = cut)) + 
   geom_histogram(bins = 20) +
-    scale_fill_manual(values = suf_palette("oxon"))
+    scale_fill_manual(values = suf_palette("hanwell"))
 
 ```
 
@@ -134,7 +129,7 @@ ggplot(diamonds, aes(x = carat, fill = cut)) +
 
 ```{r}
 # Discrete
-suf_palette("chelsea2")
+suf_palette("chelsea")
 ```
 
 ```{r}
@@ -149,7 +144,7 @@ data(iris)
 
 ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
   geom_density() +
-  scale_color_manual(values = suf_palette("chelsea2"))
+  scale_color_manual(values = suf_palette("chelsea"))
 
 ```
 
@@ -159,12 +154,12 @@ ggplot(iris,aes(x = Petal.Length, fill = Species)) +
 
 ```{r}
 # Discrete
-suf_palette("flag")
+suf_palette("classic")
 ```
 
 ```{r}
 # Continuous
-suf_palette("flag", n = 6, type = "continuous")
+suf_palette("classic", n = 6, type = "continuous")
 ```
 
 ### Example
@@ -176,7 +171,7 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
   geom_point() +
   geom_smooth(method = 'loess') +
   facet_grid(. ~ Species, scales = 'free') +
-  scale_color_manual(values = suf_palette("flag", n = 3, type = "continuous"))
+  scale_color_manual(values = suf_palette("classic", n = 3, type = "continuous"))
 
 ```
 
