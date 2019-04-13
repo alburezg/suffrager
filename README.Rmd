@@ -94,11 +94,11 @@ suf_palette("CarolMan")
 ### Example
 
 ```{r fig.width=7, fig.height=6}
-data("airquality")
+data(iris)
 
-ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) + 
-  geom_violin() +
-  scale_fill_manual(values = suf_palette("CarolMan"))
+ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
+  geom_density() +
+  scale_color_manual(values = suf_palette("CarolMan"))
 
 ```
 
@@ -119,7 +119,7 @@ data(diamonds)
 
 ggplot(diamonds, aes(x = carat, fill = cut)) + 
   geom_histogram(bins = 20) +
-    scale_fill_manual(values = suf_palette("hanwell"))
+    scale_fill_manual(values = rev(suf_palette("hanwell")))
 
 ```
 
@@ -132,19 +132,14 @@ ggplot(diamonds, aes(x = carat, fill = cut)) +
 suf_palette("chelsea")
 ```
 
-```{r}
-# Discrete
-suf_palette("mary")
-```
-
 ### Example
 
 ```{r fig.width=7, fig.height=6}
-data(iris)
+data("airquality")
 
-ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
-  geom_density() +
-  scale_color_manual(values = suf_palette("chelsea"))
+ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) + 
+  geom_violin() +
+  scale_fill_manual(values = suf_palette("chelsea"))
 
 ```
 
@@ -179,4 +174,5 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
 ## Acknowledgements
 
 The package's architecture was taken from [Karthik Ram's wesanderson package](https://github.com/karthik/wesanderson).
-Images come from the LSE Womens Library and 
+Images for `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage)
+ and 

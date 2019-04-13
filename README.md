@@ -45,6 +45,7 @@ suf_palette("london")
 
 ``` r
 library(ggplot2)
+#> Warning: package 'ggplot2' was built under R version 3.5.2
 
 data(airquality)
 
@@ -95,12 +96,11 @@ suf_palette("CarolMan")
 ### Example
 
 ``` r
-data("airquality")
+data(iris)
 
-ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) + 
-  geom_violin() +
-  scale_fill_manual(values = suf_palette("CarolMan"))
-#> Warning: Removed 37 rows containing non-finite values (stat_ydensity).
+ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
+  geom_density() +
+  scale_color_manual(values = suf_palette("CarolMan"))
 ```
 
 ![](fig/README-unnamed-chunk-10-1.png)
@@ -123,7 +123,7 @@ data(diamonds)
 
 ggplot(diamonds, aes(x = carat, fill = cut)) + 
   geom_histogram(bins = 20) +
-    scale_fill_manual(values = suf_palette("hanwell"))
+    scale_fill_manual(values = rev(suf_palette("hanwell")))
 ```
 
 ![](fig/README-unnamed-chunk-12-1.png)
@@ -139,24 +139,18 @@ suf_palette("chelsea")
 
 ![](fig/README-unnamed-chunk-13-1.png)
 
-``` r
-# Discrete
-suf_palette("mary")
-```
-
-![](fig/README-unnamed-chunk-14-1.png)
-
 ### Example
 
 ``` r
-data(iris)
+data("airquality")
 
-ggplot(iris,aes(x = Petal.Length, fill = Species)) + 
-  geom_density() +
-  scale_color_manual(values = suf_palette("chelsea"))
+ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) + 
+  geom_violin() +
+  scale_fill_manual(values = suf_palette("chelsea"))
+#> Warning: Removed 37 rows containing non-finite values (stat_ydensity).
 ```
 
-![](fig/README-unnamed-chunk-15-1.png)
+![](fig/README-unnamed-chunk-14-1.png)
 
 ### 6. Classic suffragette
 
@@ -167,14 +161,14 @@ ggplot(iris,aes(x = Petal.Length, fill = Species)) +
 suf_palette("classic")
 ```
 
-![](fig/README-unnamed-chunk-16-1.png)
+![](fig/README-unnamed-chunk-15-1.png)
 
 ``` r
 # Continuous
 suf_palette("classic", n = 6, type = "continuous")
 ```
 
-![](fig/README-unnamed-chunk-17-1.png)
+![](fig/README-unnamed-chunk-16-1.png)
 
 ### Example
 
@@ -188,9 +182,9 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
   scale_color_manual(values = suf_palette("classic", n = 3, type = "continuous"))
 ```
 
-![](fig/README-unnamed-chunk-18-1.png)
+![](fig/README-unnamed-chunk-17-1.png)
 
 Acknowledgements
 ----------------
 
-The package's architecture was taken from [Karthik Ram's wesanderson package](https://github.com/karthik/wesanderson).
+The package's architecture was taken from [Karthik Ram's wesanderson package](https://github.com/karthik/wesanderson). Images come from the LSE Womens Library and
