@@ -152,11 +152,6 @@ ggplot(airquality, aes(x = factor(Month), y = Ozone, fill = factor(Month))) +
 suf_palette("classic")
 ```
 
-```{r}
-# Continuous
-suf_palette("classic", n = 6, type = "continuous")
-```
-
 ### Example
 
 ```{r fig.width=7, fig.height=6}
@@ -170,10 +165,16 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
 
 ```
 
+Create a continuous palette of length `n` based on the suffragette colours:
+
+```{r}
+# Continuous
+suf_palette("classic", n = 6, type = "continuous")
+```
 
 ## Acknowledgements
 
-Developed by Diego Alburez-Gutierrez and Valentina Iemmi.
+Developed by [Diego Alburez-Gutierrez](www.alburez.me) and Valentina Iemmi.
 The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson).
 Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage).
 Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.

@@ -162,13 +162,6 @@ suf_palette("classic")
 
 ![](fig/README-unnamed-chunk-15-1.png)
 
-``` r
-# Continuous
-suf_palette("classic", n = 6, type = "continuous")
-```
-
-![](fig/README-unnamed-chunk-16-1.png)
-
 ### Example
 
 ``` r
@@ -181,11 +174,20 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
   scale_color_manual(values = suf_palette("classic", n = 3, type = "continuous"))
 ```
 
+![](fig/README-unnamed-chunk-16-1.png)
+
+Create a continuous palette of length `n` based on the suffragette colours:
+
+``` r
+# Continuous
+suf_palette("classic", n = 6, type = "continuous")
+```
+
 ![](fig/README-unnamed-chunk-17-1.png)
 
 Acknowledgements
 ----------------
 
-Developed by Diego Alburez-Gutierrez and Valentina Iemmi. The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson). Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage). Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.
+Developed by [Diego Alburez-Gutierrez](www.alburez.me) and Valentina Iemmi. The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson). Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage). Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.
 
 Want to help? Create a pull request or share the word: @[d\_alburez](https://twitter.com/d_alburez)!
