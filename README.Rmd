@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 ```
 
 
-# 'suffrager': a colour palette for data visualisation in R (beta)
+# 'suffrager': a feminist colour palette for R (beta)
 
 ## Installation
 

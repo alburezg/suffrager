@@ -1,28 +1,27 @@
 
-'Suffrage': a colour palette for data visualisation in R (beta)
-===============================================================
+'suffrager': a feminist colour palette for R (beta)
+===================================================
 
 Installation
 ------------
 
 ``` r
 # library(devtools)
-# install_github("alburezg/suffrage")
+# install_github("alburezg/suffrager")
 ```
 
 Usage
 -----
 
 ``` r
-library(suffrage)
+library(suffrager)
 ```
 
 See all available palettes:
 
 ``` r
 names(suf_palettes)
-#> [1] "london"   "oxon"     "CarolMan" "hanwell"  "chelsea"  "classic" 
-#> [7] "mary"
+#> [1] "london"   "oxon"     "CarolMan" "hanwell"  "chelsea"  "classic"
 ```
 
 Palettes
