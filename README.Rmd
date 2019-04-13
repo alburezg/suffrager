@@ -179,3 +179,4 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
 ## Acknowledgements
 
 The package's architecture was taken from [Karthik Ram's wesanderson package](https://github.com/karthik/wesanderson).
+Images come from the LSE Womens Library and 
