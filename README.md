@@ -186,4 +186,6 @@ ggplot(iris,aes(x = Petal.Length, y = Petal.Width, color = Species)) +
 Acknowledgements
 ----------------
 
-Developed by Diego Alburez-Gutierrez and Valentina Iemmi. The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson). Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage). Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent. Want to help developd or share the word? Send a pull request or tweet @[d\_alburez](https://twitter.com/d_alburez)!
+Developed by Diego Alburez-Gutierrez and Valentina Iemmi. The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson). Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage). Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.
+
+Want to help? Create a pull request or share the word: @[d\_alburez](https://twitter.com/d_alburez)!
