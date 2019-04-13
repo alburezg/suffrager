@@ -10,24 +10,16 @@ suf_palettes <- list(
   , hanwell = c("#200E6A", "#B01824", "#90468C",  "#326529", "#82D0F0",  "#D7BB55")
   , chelsea = c("#9C5E51", "#9E864A", "#61714D", "#4B6C7F", "#614927")
   , classic = c("#990099", "#009900")
-  # , mary = c("#24392A", "#463360", "#882635", "#B98B3D", "#D98084", "#93A4B8")
 )
 
-#' A Wes Anderson palette generator
+#' SUffragette- and suffragist-inspired palettes
 #'
-#' These are a handful of color palettes from Wes Anderson movies.
-#'
-#' @param n Number of colors desired. Unfortunately most palettes now only
-#'   have 4 or 5 colors. But hopefully we'll add more palettes soon. All color
-#'   schemes are derived from the most excellent Tumblr blog:
-#'   \href{http://wesandersonpalettes.tumblr.com/}{Wes Anderson Palettes}.
+#' @param n Number of colors desired. Number of colours available vary by type of palette.
 #'   If omitted, uses all colours.
 #' @param name Name of desired palette. Choices are:
 #'   \code{BottleRocket1}, \code{BottleRocket2},  \code{Rushmore1},
-#'   \code{Royal1}, \code{Royal2},  \code{Zissou1}, \code{Darjeeling1},
-#'   \code{Darjeeling2},  \code{Chevalier1} , \code{FantasticFox1} ,
-#'   \code{Moonrise1}, \code{Moonrise2}, \code{Moonrise3}, \code{Cavalcanti1},
-#'   \code{GrandBudapest1}, \code{GrandBudapest2}, \code{IsleofDogs1}, \code{IsleofDogs2}
+#'   \code{london}, \code{oxon},  \code{CarolMan}, \code{hanwell},
+#'   \code{chelsea},  \code{classic}
 #' @param type Either "continuous" or "discrete". Use continuous if you want
 #'   to automatically interpolate between colours.
 #'   @importFrom graphics rgb rect par image text
@@ -35,16 +27,13 @@ suf_palettes <- list(
 #' @export
 #' @keywords colors
 #' @examples
-#' wes_palette("Royal1")
-#' wes_palette("GrandBudapest1")
-#' wes_palette("Cavalcanti1")
-#' wes_palette("Cavalcanti1", 3)
+#' suf_palette("london")
+#' suf_palette("chelsea", n = 3)
 #'
 #' # If you need more colours than normally found in a palette, you
 #' # can use a continuous palette to interpolate between existing
 #' # colours
-#' pal <- wes_palette(21, name = "Zissou1", type = "continuous")
-#' image(volcano, col = pal)
+#' suf_palette("classic", n = 6, type = "continuous")
 suf_palette <- function(name, n, type = c("discrete", "continuous")) {
   type <- match.arg(type)
 
