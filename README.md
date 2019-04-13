@@ -6,8 +6,8 @@ Installation
 ------------
 
 ``` r
-# library(devtools)
-# install_github("alburezg/suffrager")
+library(devtools)
+install_github("alburezg/suffrager")
 ```
 
 Usage

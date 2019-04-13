@@ -16,9 +16,9 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-```{r}
-# library(devtools)
-# install_github("alburezg/suffrager")
+```{r, eval=FALSE}
+library(devtools)
+install_github("alburezg/suffrager")
 ```
 
 ## Usage
