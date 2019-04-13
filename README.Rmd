@@ -12,19 +12,19 @@ knitr::opts_chunk$set(
 ```
 
 
-# 'Suffrage': a colour palette for data visualisation in R (beta)
+# 'suffrager': a colour palette for data visualisation in R (beta)
 
 ## Installation
 
 ```{r}
 # library(devtools)
-# install_github("alburezg/suffrage")
+# install_github("alburezg/suffrager")
 ```
 
 ## Usage
 
 ```{r}
-library(suffrage)
+library(suffrager)
 ```
 
 See all available palettes:
