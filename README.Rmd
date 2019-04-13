@@ -55,7 +55,7 @@ data(airquality)
 
 ggplot(airquality, aes(x=Day, y=Month)) +
   geom_tile(aes(fill=Temp)) +
-  scale_fill_gradientn(colours = suf_palette("london", 30, type = "continuous")) +
+  scale_fill_gradientn(colours = rev(suf_palette("london", 30, type = "continuous"))) +
   coord_equal()
 ```
 
