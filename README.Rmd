@@ -177,7 +177,7 @@ suf_palette("classic", n = 6, type = "continuous")
 Developed by [Diego Alburez-Gutierrez](http://www.alburez.me) and [Valentina Iemmi](http://personal.lse.ac.uk/iemmi/).
 The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson).
 Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage).
-Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.
+Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent. The [banners](https://collections.museumoflondon.org.uk/online/object/91873.html) for the `chelsea` pallete come from the collections of the Museum of London, as well as the [rosette](https://collections.museumoflondon.org.uk/online/object/87712.html) used for the `classic` palette.  
 
 
 Want to help? Create a pull request or share the word: @[d_alburez](https://twitter.com/d_alburez) @[ValentinaIemmi](https://twitter.com/ValentinaIemmi)!
