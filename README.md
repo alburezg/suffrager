@@ -188,6 +188,6 @@ suf_palette("classic", n = 6, type = "continuous")
 Acknowledgements
 ----------------
 
-Developed by [Diego Alburez-Gutierrez](http://www.alburez.me) and Valentina Iemmi. The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson). Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage). Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.
+Developed by [Diego Alburez-Gutierrez](http://www.alburez.me) and [Valentina Iemmi](http://personal.lse.ac.uk/iemmi/). The package's architecture and documentation was taken from Karthik Ram's [wesanderson package](https://github.com/karthik/wesanderson). Images for the `london`, `oxon`, `CarolMan`, `chelsea`, and `classic` palettes used with kind permission from the [LSE Womens Library Collection](http://www.lse.ac.uk/library/collections/collection-highlights/womens-suffrage). Images for palette `hanwell` were provided by the [100 Banners project](http://www.digitaldrama.org/100-banners-images/) and are used with the project's consent.
 
-Want to help? Create a pull request or share the word: @[d\_alburez](https://twitter.com/d_alburez)!
+Want to help? Create a pull request or share the word: @[d\_alburez](https://twitter.com/d_alburez) @[ValentinaIemmi](https://twitter.com/ValentinaIemmi)!
