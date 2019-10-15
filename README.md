@@ -2,6 +2,11 @@
 'suffrager': a feminist colour palette for R
 ============================================
 
+Hi! :wave: We are currently looking for help to improve the colour palettes extracted from 
+the suffragette and sufragists banners below. 
+Do you have an eye for colour? Create a pull request or reach out to us: 
+@[d\_alburez](https://twitter.com/d_alburez) @[ValentinaIemmi](https://twitter.com/ValentinaIemmi).
+
 Installation
 ------------
 
